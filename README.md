@@ -1,12 +1,12 @@
-## chatapp Api Interface (POC)
+## Chatapp Interface (POC)
 
 Following steps are necessary to get your application up and running.
 
 What is this repository for?
 
-    Chatapp API interface.
+    Chatapp interface.
 
-    Version:- chatapp_2.1
+    Version:- chatapp_1.1.0
     Git clone :- https://github.com/{YOUR NAME}/gitblockchain.git
 
 How do I get set up?
@@ -27,7 +27,9 @@ Dependencies
 Deployment instructions:-
 
     In terminal go to you project directory
-    type "yarn node_1"
+    type "yarn start"
+    open two tab on the browser and type this (http://localhost:4000)
+    write your name and start sending message to your friend ....... happy chatting!
 
 Who do I talk to?
 
@@ -35,6 +37,6 @@ Who do I talk to?
     contact info:- pauldebraj7@gmail.com
     LinkedIn:- https://www.linkedin.com/in/debraj-paul
 
-# License
+License
 
     MIT License
