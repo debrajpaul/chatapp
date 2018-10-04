@@ -10,14 +10,15 @@ class App extends Component {
             msg: "",
             msgs: []
         };
-        this.socket = io("localhost:4000");
+        this.socket = io("localhost:4001");
 
         this.socket.on("RECEIVE_MESSAGE", function(data) {
             addMessage(data);
         });
 
         const addMessage = data => {
-            this.setState({ msgs: [...this.state.msgs, data] });
+            console.log(data);
+            this.setState({ msgs: data });
             //	console.log(this.state.msgs);
         };
 
