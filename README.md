@@ -24,16 +24,16 @@ Dependencies
 
     All dependencies are listed in package.json file
     * Install Yarn package manager (Uduntu 16.04, Link:- https://yarnpkg.com/en/docs/install#debian-stable)
-    * In terminal go to you project directory
+    * In terminal go to your project directory
     * In terminal type "yarn" to add all dependencies.
 
 Deployment instructions:-
 
-    In terminal go to you project directory
+    In terminal go to your project directory
     * Type "yarn start-node"
     * Type "yarn start-react"
     * Open two tab on the browser and type this (http://localhost:3000)
-      --- write your name and start sending message to your friend ....... happy chatting!
+      --- write your name and start sending messages to your friend ....... happy chatting! :) ;)
 
 Who do I talk to?
 
