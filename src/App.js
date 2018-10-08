@@ -31,6 +31,13 @@ class App extends Component {
             this.setState({ msg: "" });
         };
     }
+    componentWillMount() {
+        this.sendMessage = () => {
+            this.socket.emit("FIRST_CALL");
+            this.setState({ msg: "" });
+        };
+        this.sendMessage();
+    }
 
     render() {
         return (
