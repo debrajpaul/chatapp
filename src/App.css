@@ -1,18 +1,28 @@
 .App {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	/* height: 600px; */
-	flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* height: 600px; */
+    flex-direction: column;
 }
 .message-container {
-	border: 1px solid #eaeaea;
-	margin: 1em auto;
-	width: 33em;
-	padding: 1.5em;
-	text-align: left;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 2px #eee;
+    margin: 0.5em auto;
+    width: 31em;
+    padding: 1.5em;
+    text-align: left;
+    max-height: calc(50vh);
+    overflow: auto;
 }
 
 .post-message-box {
-	margin-top: 2px;
+    width: 31em;
+    padding: 1.5em;
+    margin: 1em auto;
+}
+.user-box {
+    width: 31em;
+    padding: 1.5em;
+    margin: 1em auto;
 }

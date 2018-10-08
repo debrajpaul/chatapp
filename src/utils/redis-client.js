@@ -17,20 +17,25 @@ client.on("ready", function() {
     console.log("Redis is ready");
 });
 
-// error handle
+// Error handling
 client.on("error", function() {
     console.log("app:redis-client", "Failed to connect to redis:\n%O", err);
     process.exit(1);
 });
 
 // Setter function to store data in redis
-function storeUserOnRedis(key, val) {
+function storeChatOnRedis(key, val) {
     return client.setAsync(key, val);
 }
 
 // Getter function to fetch data from redis
-function getUserFromRedis(key) {
+function getChartFromRedis(key) {
     return client.getAsync(key);
 }
 
-module.exports = { storeUserOnRedis, getUserFromRedis };
+// Getter function to fetch data from redis
+function clearCacheFromRedis(key) {
+    return client.delAsync(key);
+}
+
+module.exports = { storeChatOnRedis, getChartFromRedis, clearCacheFromRedis };
